@@ -1,9 +1,7 @@
 export const initialState = {
   loaded: false,
   loading: false,
-  data: [{
-    todos: [{label: 'Eat pizza', complete: false}]
-  }]
+  data: [{label: 'Eat pizza', complete: false}]
 };
 
 export function reducer(state = initialState, action: { type: string; payload: any }) {

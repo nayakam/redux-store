@@ -4,6 +4,7 @@ const todoList = document.querySelector('.todos') as HTMLLIElement;
 export function renderTodos(collection) {
   span.innerHTML = collection.length;
   todoList.innerHTML = '';
+  //console.log(collection);
   for (const item of collection) {
     todoList.innerHTML += `
     	<li>
