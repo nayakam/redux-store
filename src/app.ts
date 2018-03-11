@@ -9,6 +9,7 @@ const store = new fromStore.Store({}, {
   todos: [{label: 'Eat pizza', complete: false}]
 });
 
+console.log("Initial Store:" + store.value);
 console.log(store.value);
 
 button.addEventListener(
@@ -19,6 +20,10 @@ button.addEventListener(
     const payload = {label: input.value, complete: false};
 
     console.log(payload);
+    store.dispatch({
+      type: 'ADD_TOD',
+      payload
+    });
 
     input.value = '';
   },
