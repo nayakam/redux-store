@@ -32,15 +32,23 @@ Store invokes reduces with previous state and action
 Once this updated then notify subscribers (components)
 
 #### One-way data flow
- Component --- Dispatch Action ---> Store ---> Reducer ---> New State ---- Render--> Againg to Component
+ Component --- Dispatch Action ---> Store ---> Reducer ---> New State ---- Render--> Again to Component
 
 #### Immutability 
-Object state can't be modified after creation means that object state can't be changed after constructed.
+Object state can't be modified after creation or object state can't be changed after constructed.
    * useful in concurrent applications. Since they cannot change state, they cannot be corrupted by thread interference or observed in an inconsistent state.
    * Re usability limitations in objects
    * Performance impact on object creations 
 
 Object.assign({},existingObject,Change) equivalent Spread operation (...)   
+
+### NGRX / Store
+Redux inspired reactive state management for angular written with observables.
+  
+Reactive Angular  
+Container vs Presentational components
+S --SELECT --> C  -- @INPUT --> C
+C --@OUTPUT--> C  -- DISPATCH -> S
 
 #####
 
