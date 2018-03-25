@@ -50,8 +50,20 @@ Container vs Presentational components
 S --SELECT --> C  -- @INPUT --> C
 C --@OUTPUT--> C  -- DISPATCH -> S
 
-#####
+#### ngrx/effects
+* Side effects model for ngrx/store
+  * Listen for ngrx/store actions
+  * Isolate side effects from components
+  * Communicate outside of Angular
 
+####
+ 
+### References:
 
-#### 
-#####
+* [Build a Better Angular 2 Application with Redux and ngrx](http://onehungrymind.com/build-better-angular-2-application-redux-ngrx/)
+* [Building a Redux application with Angular 2 - Part 1](https://www.pluralsight.com/guides/front-end-javascript/building-a-redux-application-with-angular-2-part-1)
+* [Building a Redux application with Angular 2 - Part 2](https://www.pluralsight.com/guides/front-end-javascript/building-a-redux-application-with-angular-2-part-2)
+* [Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)
+* [A Cartoon Intro To Redux](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6)
+* [From Redux to Angular ngrx/store](https://julienrenaux.fr/2017/02/16/from-redux-to-angular-ngrxstore/)
+* [Redux in Angular, Really :D using NGRX v4](https://rahulrsingh09.github.io/AngularConcepts/ngrx)
